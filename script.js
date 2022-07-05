@@ -27,5 +27,5 @@ const renderTip = (data) => {
 btn.addEventListener('click', (e) => {
   e.preventDefault();
   getAdivisorTip();
-})
+});
  

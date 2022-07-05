@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Varela+Round&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow:hidden;
+  background-color: #2B2929;
+  font-family: 'Inconsolata', monospace;
+}
+
+
+.tip-box {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.tip {
+  background-color: #0D500D;
+  width: 75%;
+  height: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 25%;
+  border-radius: 20px;
+  box-shadow: 10px 10px 10px rgb(7, 7, 7);
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+
+a {
+  font-size: 1em;
+  text-decoration: none;
+  color: #ffff;
+  margin: 1em;
+}
+
+a:hover {
+color: #E2FB00;
+cursor:text;
+text-shadow: 10px 10px 10px rgb(7, 7, 7);
+
+}
+
+button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  background-color: #7310D4;
+  border: none;
+  height: 2em;
+  width: 5em;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+}
+button:hover {
+  background-color: #E2FB00;
+  color: black;
+}
+
+@media screen and  (min-width: 1200px) {
+  .tip {
+    width: 25%;
+  }
+  
+  a {
+    font-size: 1.5em;
+  }
+  }
