@@ -5,6 +5,7 @@ const tip = document.querySelector('.tip');
 const btn = document.querySelector('.btn');
 let tipId = document.querySelector('.tip-id');
 let tipMessage = document.querySelector('.tip-message');
+const title = document.querySelector('.title');
 
 const getAdivisorTip = async () => {
   try {
@@ -18,8 +19,9 @@ const getAdivisorTip = async () => {
 };
 
 const renderTip = (data) => {
-  tipId.innerHTML = `ADVICE #${Object.entries(data.slip)[0][1]}`
-  tipMessage.innerHTML = `${Object.entries(data.slip)[1][1]}`
+  tipId.innerHTML = `ADVICE #${Object.entries(data.slip)[0][1]}`;
+  tipMessage.innerHTML = `${Object.entries(data.slip)[1][1]}`;
+  title.innerHTML = '';
 };
 
 
