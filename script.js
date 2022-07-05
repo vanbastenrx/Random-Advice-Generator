@@ -1,10 +1,10 @@
 'use strict';
 
 const API_URL = 'https://api.adviceslip.com/advice';
-const tip = document.querySelector('.tip');
+const tip = document.querySelector('.advice');
 const btn = document.querySelector('.btn');
-let tipId = document.querySelector('.tip-id');
-let tipMessage = document.querySelector('.tip-message');
+let tipId = document.querySelector('.advice-id');
+let tipMessage = document.querySelector('.advice-message');
 const title = document.querySelector('.title');
 
 const getAdivisorTip = async () => {
