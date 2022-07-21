@@ -3,8 +3,8 @@
 const API_URL = 'https://api.adviceslip.com/advice';
 const tip = document.querySelector('.advice');
 const btn = document.querySelector('.btn');
-let tipId = document.querySelector('.advice-id');
-let tipMessage = document.querySelector('.advice-message');
+let adviceID = document.querySelector('.advice-id');
+let adviceMessage = document.querySelector('.advice-message');
 const img = document.querySelector('.img');
 
 const getAdvice = async () => {
@@ -18,9 +18,9 @@ const getAdvice = async () => {
 };
 
 const renderAdvice = (data) => {
-  tipId.innerHTML = `ADVICE #${Object.entries(data.slip)[0][1]}`;
-  tipMessage.innerHTML = `"${Object.entries(data.slip)[1][1]}"`;
-  img.style.opacity = .2;
+  adviceID.innerHTML = `ADVICE #${Object.entries(data.slip)[0][1]}`;
+  adviceMessage.innerHTML = `"${Object.entries(data.slip)[1][1]}"`;
+  img.style.opacity = 1;
 };
 
 window.onload = getAdvice();
