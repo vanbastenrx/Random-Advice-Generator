@@ -1,10 +1,21 @@
  @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&family=Varela+Round&display=swap');
 
   * {
-    font-family: 'Inconsolata', sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+
+  *,*::before, *::after {
+    box-sizing: inherit;
+  }
+
+  html {
+    box-sizing: border-box;
+    font-size: 62.5%;
   }
 
   body {
+    font-family: 'Inconsolata', sans-serif;
     background-color: #222430;
     height: 100vh;
     display: flex;
@@ -18,23 +29,39 @@
 
   .advice {
     background-color: #353b4a;
-    border-radius: 10px;
+    border-radius: 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    height: 300px;
-    width: 500px;
+    justify-content: center;
+    height: 30rem;
+    width: 50rem;
+  }
+
+  .advice__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: auto;
   }
 
   .advice-id {
     color: #24b75a;
+    display: flex;
+    margin-top: auto;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
   }
 
   .advice-message {
-    font-size: 1.4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+    font-size: 2rem;
     font-weight: bold;
-    height: 120px;
-    width: 400px;
+    width: 40rem;
   }
 
   button {
@@ -44,28 +71,42 @@
     background-position: center;
     background-color: #24b75a;
     border: none;
-    height: 3em;
-    width: 3em;
+    height: 4rem;
+    width: 4rem;
     border-radius: 50%;
     transform: translateY(-50%);
+    transition: all .3s;
   }
 
   button:hover{
-    box-shadow:0px 5px 30px 10px rgba(92, 253, 189, 0.87);
+    box-shadow: 0 .5rem 3rem 1rem rgba(92, 253, 189, 0.87);
+  }
+
+  .img {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 3rem;
+    align-items: center;
+    justify-content: center;
+    width: 50rem;
   }
 
 
-@media screen and (max-width: 510px) {
+@media screen and (max-width: 37.5em) {
   .advice {
-    width: 300px;
+    max-width: 30rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
   }
 
   .advice-message {
-    font-size: 1em;
-    width: 200px;
+    font-size: 1.5em;
+    width: 20rem;
   }
 
   .divider {
-    width: 290px;
+    width: 25rem;
   }
 }
