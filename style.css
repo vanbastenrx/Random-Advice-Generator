@@ -36,6 +36,7 @@
     justify-content: center;
     height: 30rem;
     width: 50rem;
+    margin-top: auto;
   }
 
   .advice__content {
@@ -89,6 +90,18 @@
     align-items: center;
     justify-content: center;
     width: 50rem;
+  }
+
+  .footer {
+    display: flex;
+    margin-top: auto;
+    margin-bottom: 2rem;
+  }
+
+  .footer__text a {
+    text-decoration: none;
+    outline: none;
+    color: #24b75a;
   }
 
 
