@@ -9,7 +9,7 @@ const img = document.querySelector('.img');
 
 const getAdvice = async () => {
   try {
-  const response = await fetch(`${API_URL}`);
+  const response = await fetch(`${API_URL}`, { cache: 'no-cache' });
   const data = await response.json();
   renderAdvice(data);  
   } catch (err) {
